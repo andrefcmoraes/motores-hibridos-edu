@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroHybrid Edu - Motores Híbridos Educacionais</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">Aero<span class="highlight">Hybrid</span> Edu</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#produtos">Produtos</a>
+                <a href="#diferenciais">Diferenciais</a>
+                <a href="#sobre">Sobre Nossos Motores</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <div class="cart-trigger" id="open-cart-btn">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-label">Carrinho</span>
+                <span class="cart-badge" id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Propulsão Aeroespacial STEM & Universitária</span>
+                <h1>Motores Foguete Híbridos Educacionais</h1>
+                <p>Kits didáticos de propulsão híbrida projetados para laboratórios acadêmicos, equipes de minifoguetes e demonstrações científicas com máxima segurança e controle.</p>
+                <div class="hero-actions">
+                    <a href="#produtos" class="btn btn-primary">Ver Catálogo de Motores</a>
+                    <a href="#sobre" class="btn btn-outline">Saiba Como Funciona</a>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <div class="motor-card-preview">
+                    <div class="preview-header">
+                        <span class="preview-tag">Modelo Destaque</span>
+                        <h3>Kit Híbrido Edu 250N</h3>
+                    </div>
+                    <div class="spec-grid">
+                        <div class="spec-item">
+                            <span class="spec-value">250 N</span>
+                            <span class="spec-label">Empuxo Médio</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-value">PMMA + O₂</span>
+                            <span class="spec-label">Propulsores</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-value">3.5 s</span>
+                            <span class="spec-label">Tempo de Queima</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-value">850 N.s</span>
+                            <span class="spec-label">Impulso Total</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios/Diferenciais -->
+    <section id="diferenciais" class="features">
+        <div class="container">
+            <h2 class="section-title">Por Que Escolher Motores Híbridos Educacionais?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Segurança Inigualável</h3>
+                    <p>Combustível sólido inerte (PMMA/ABS) isolado do oxidante. Não há risco de detonação espontânea durante o manuseio e armazenamento.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Câmara Transparente</h3>
+                    <p>Modelos com corpo em acrílico para visualização em tempo real da regressão do grão e formação de pluma de exaustão em bancada.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🕹️</div>
+                    <h3>Controle e Extinção</h3>
+                    <p>Diferente dos motores sólidos, é possível interromper e reiniciar a queima através do fechamento da válvula de oxidante.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Material Didático Completo</h3>
+                    <p>Acompanha apostilas, modelos de simulação numérica (CEA/OpenMotor) e scripts para dimensionamento de toberas e regressão.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Produtos -->
+    <section id="produtos" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Catálogo de Produtos & Kits</h2>
+                <p>Selecione os itens para compor seu orçamento personalizado.</p>
+            </div>
+            
+            <div class="product-categories">
+                <button class="filter-btn active" data-category="todos">Todos</button>
+                <button class="filter-btn" data-category="motores">Motores & Kits</button>
+                <button class="filter-btn" data-category="insumos">Combustíveis & Grãos</button>
+                <button class="filter-btn" data-category="eletronica">Bancada & Ignição</button>
+            </div>
+
+            <div class="products-grid" id="products-grid">
+                <!-- Inserido dinamicamente via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre / Como Funciona -->
+    <section id="sobre" class="about">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>Princípio de Funcionamento</h2>
+                <p>O motor híbrido combina um <strong>combustível sólido</strong> (como PMMA acrílico ou ABS) posicionado na câmara de combustão e um <strong>oxidante gasoso ou líquido</strong> (como Oxigênio Gasoso O₂ ou Óxido Nitroso N₂O) injetado através de uma servoválvula eletrônica.</p>
+                <ul class="check-list">
+                    <li>✓ Ignição segura via pirotécnico de baixa potência ou vela de plasma.</li>
+                    <li>✓ Medição de massa de combustível restante e empuxo com célula de carga.</li>
+                    <li>✓ Conectividade com placas Arduino/ESP32 e softwares de telemetria.</li>
+                    <li>✓ Conformidade com diretrizes de segurança acadêmica.</li>
+                </ul>
+            </div>
+            <div class="about-card">
+                <h3>Instruções para Orçamento</h3>
+                <ol class="steps-list">
+                    <li><span>1</span> Adicione os motores, grãos e acessórios ao seu carrinho.</li>
+                    <li><span>2</span> Abra o carrinho e preencha seus dados de contato e instituição.</li>
+                    <li><span>3</span> Escolha enviar via <strong>WhatsApp</strong> ou <strong>E-mail</strong>.</li>
+                    <li><span>4</span> Nossa equipe técnica responderá com a cotação formal e prazos de entrega!</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Detalhes do Produto -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Conteúdo do produto via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrinho Drawer / Modal Overlay -->
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-drawer">
+            <div class="cart-header">
+                <h2>Seu Carrinho de Orçamento</h2>
+                <button class="cart-close-btn" id="close-cart-btn">&times;</button>
+            </div>
+            
+            <div class="cart-body" id="cart-items-container">
+                <!-- Itens do carrinho via JS -->
+            </div>
+
+            <div class="cart-footer">
+                <div class="cart-summary">
+                    <div class="summary-row">
+                        <span>Total Estimado:</span>
+                        <strong id="cart-total-price">R$ 0,00</strong>
+                    </div>
+                </div>
+
+                <!-- Form de Checkout -->
+                <form id="checkout-form" class="checkout-form">
+                    <h3>Dados para Cotação</h3>
+                    <div class="form-group">
+                        <label for="cust-name">Nome Completo *</label>
+                        <input type="text" id="cust-name" placeholder="Ex: Prof. André Morais" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cust-email">E-mail *</label>
+                            <input type="email" id="cust-email" placeholder="seu.email@universidade.edu.br" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cust-phone">WhatsApp/Telefone *</label>
+                            <input type="tel" id="cust-phone" placeholder="(98) 99999-9999" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cust-institution">Instituição / Equipe</label>
+                            <input type="text" id="cust-institution" placeholder="Ex: UEMA / Equipe Carcará">
+                        </div>
+                        <div class="form-group">
+                            <label for="cust-city">Cidade / UF *</label>
+                            <input type="text" id="cust-city" placeholder="São Luís / MA" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cust-notes">Observações do Projeto</label>
+                        <textarea id="cust-notes" rows="2" placeholder="Requisitos de empuxo, prazos ou customizações desejadas..."></textarea>
+                    </div>
+
+                    <div class="checkout-actions">
+                        <button type="button" class="btn btn-whatsapp" id="btn-whatsapp">
+                            <span>💬 Enviar no WhatsApp</span>
+                        </button>
+                        <button type="button" class="btn btn-email" id="btn-email">
+                            <span>✉️ Enviar por E-mail</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <div class="logo">🚀 Aero<span class="highlight">Hybrid</span> Edu</div>
+                <p>Tecnologia e ensino em propulsão fogueteira para universidades, colégios técnicos e centros de pesquisa.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contato Comercial</h4>
+                <p>✉️ contato@aerohybridedu.com.br</p>
+                <p>📱 WhatsApp: (98) 98888-7777</p>
+                <p>📍 São Luís - Maranhão, Brasil</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#produtos">Motores Híbridos</a></li>
+                    <li><a href="#diferenciais">Segurança Didática</a></li>
+                    <li><a href="#sobre">Como Comprar</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 AeroHybrid Edu. Desenvolvido para fomento ao ensino de engenharia aeroespacial e STEM.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
