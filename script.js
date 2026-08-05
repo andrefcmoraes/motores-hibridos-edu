@@ -1,7 +1,7 @@
 // Configurações Globais de Contato (Altere aqui para seus dados reais)
 const CONFIG = {
-    WHATSAPP_NUMBER: "5598988887777", // Formato: DDI + DDD + Número (apenas dígitos)
-    SELLER_EMAIL: "contato@aerohybridedu.com.br"
+    WHATSAPP_NUMBER: "5598984021920", // Formato: DDI + DDD + Número (apenas dígitos)
+    SELLER_EMAIL: "andrefcmoraes@gmail.com"
 };
 
 // Base de Dados dos Produtos
