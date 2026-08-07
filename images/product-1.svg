@@ -1,0 +1,39 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c0f14"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="flame1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E6BFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#2E6BFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg1)"/>
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="100" x2="400" y2="100"/>
+    <line x1="0" y1="200" x2="400" y2="200"/>
+    <line x1="0" y1="300" x2="400" y2="300"/>
+    <line x1="100" y1="0" x2="100" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+  </g>
+  <g transform="translate(200,210)">
+    <!-- flame -->
+    <path d="M -22 118 L 0 210 L 22 118 Z" fill="url(#flame1)"/>
+    <!-- motor casing -->
+    <rect x="-42" y="-110" width="84" height="200" rx="6" fill="none" stroke="#e7e9ee" stroke-width="3"/>
+    <!-- nozzle -->
+    <path d="M -42 90 L -22 118 L 22 118 L 42 90 Z" fill="none" stroke="#e7e9ee" stroke-width="3" stroke-linejoin="round"/>
+    <!-- injector head -->
+    <rect x="-30" y="-134" width="60" height="26" rx="3" fill="none" stroke="#2E6BFF" stroke-width="3"/>
+    <!-- internal grain lines -->
+    <line x1="-42" y1="-40" x2="42" y2="-40" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <line x1="-42" y1="10" x2="42" y2="10" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <circle cx="0" cy="-15" r="12" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+    <!-- fins -->
+    <path d="M -42 40 L -70 90 L -42 90 Z" fill="none" stroke="#e7e9ee" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M 42 40 L 70 90 L 42 90 Z" fill="none" stroke="#e7e9ee" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+  <text x="24" y="368" font-family="monospace" font-size="12" fill="#6b7280" letter-spacing="2">EDU-100N // REV.A</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c0f14"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg3)"/>
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="100" x2="400" y2="100"/><line x1="0" y1="200" x2="400" y2="200"/><line x1="0" y1="300" x2="400" y2="300"/>
+    <line x1="100" y1="0" x2="100" y2="400"/><line x1="200" y1="0" x2="200" y2="400"/><line x1="300" y1="0" x2="300" y2="400"/>
+  </g>
+  <g transform="translate(200,200)">
+    <rect x="-46" y="-120" width="92" height="230" rx="8" fill="rgba(255,255,255,0.03)" stroke="#e7e9ee" stroke-width="2.5" stroke-dasharray="1 0"/>
+    <!-- visible flame core -->
+    <circle cx="0" cy="10" r="26" fill="none" stroke="#2E6BFF" stroke-width="2" stroke-dasharray="5 4"/>
+    <circle cx="0" cy="10" r="14" fill="none" stroke="#2E6BFF" stroke-width="1.5"/>
+    <!-- grain rings -->
+    <circle cx="0" cy="10" r="38" fill="none" stroke="#6b7280" stroke-width="1.2"/>
+    <circle cx="0" cy="-45" r="30" fill="none" stroke="#6b7280" stroke-width="1"/>
+    <circle cx="0" cy="65" r="30" fill="none" stroke="#6b7280" stroke-width="1"/>
+    <rect x="-30" y="-140" width="60" height="24" rx="3" fill="none" stroke="#e7e9ee" stroke-width="2.5"/>
+    <path d="M -46 108 L -26 132 L 26 132 L 46 108 Z" fill="none" stroke="#e7e9ee" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- viewing highlight -->
+    <line x1="-46" y1="-100" x2="-46" y2="90" stroke="#ffffff" stroke-width="1" opacity="0.5"/>
+  </g>
+  <text x="24" y="368" font-family="monospace" font-size="12" fill="#6b7280" letter-spacing="2">DEMO-50N // VISUAL CORE</text>
+</svg>
